@@ -3,3 +3,5 @@ var apiCall = "https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lo
 
 var searchInput = document.querySelector("#search")
 var searchInput = document.querySelector("#form")
+
+var 
