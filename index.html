@@ -18,35 +18,75 @@
     <div class="container">
         <div class="row" id="row1">
             <div class="col-3">
-         <h4> Search for a city: </h4>
-            <form class="form" id="form">  
-                         
-            <input type="text" id="search">
-            
-            </form>
-            <button id="btn" type="button">Search</button>    
-            
-                
-            
+                <h4> Search for a city: </h4>
+                <form class="form" id="form">
+
+                    <input type="text" id="search">
+
+                </form>
+                <button id="btn" type="button">Search</button>
+
+
+
             </div>
             <div class="col-9"> Test 2 </div>
         </div>
 
         <div id="row2" class="row">
 
-            <div class="col-2">
-             Test 3
+            <!-- <div class="col-2">
+                Test 3
             </div>
             <div class="col-2"></div>
             <div class="col-2"></div>
             <div class="col-2"></div>
             <div class="col-2"></div>
-        </div>
+        </div> -->
+
+        <div class="m-5 row justify-content-around">
+            <!-- todo start -->
+            <div class="col">
+              <h2>To Do</h2>
+              <ul id="list-toDo" class="list-group"></ul>
+            </div>
+            <!-- todo end -->
+            <!-- in progress start -->
+            <div class="col">
+              <h2>In Progress</h2>
+              <ul id="list-inProgress" class="list-group">
+                <li class="list-group-item">
+                  <span class="badge badge-primary badge-pill">05/28/2020</span>
+                  <p class="m-1">Sample task in progress</p>
+                </li>
+              </ul>
+            </div>
+            <!-- in progress end -->
+            <!-- in review start -->
+            <div class="col">
+              <h2>In Review</h2>
+              <ul id="list-inReview" class="list-group">
+                <li class="list-group-item">
+                  <span class="badge badge-primary badge-pill">05/28/2020</span>
+                  <p class="m-1">Sample task in review</p>
+                </li>
+              </ul>
+            </div>
+            <!-- in review end -->
+            <!-- done start -->
+            <div class="col">
+              <h2>Done</h2>
+              <ul id="list-done" class="list-group">
+                <li class="list-group-item">
+                  <span class="badge badge-primary badge-pill">05/28/2020</span>
+                  <p class="m-1">Sample task that's done</p>
+                </li>
+              </ul>
+            </div>
+            <!-- done end -->
+          </div> 
 
 
-
-    </div>
-    <script src="script.js"></script>
+        <script src="script.js"></script>
 </body>
 
 </html>
