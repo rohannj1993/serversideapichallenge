@@ -3,5 +3,11 @@
  .header {
      background-color:rgb(59, 59, 185);
      width: 100%;
+     
+     
  }
 
+
+.text {
+    color: white;
+}
