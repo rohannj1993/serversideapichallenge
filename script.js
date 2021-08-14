@@ -27,7 +27,7 @@ function searchCity(lat, lon) {
       var windSpeed = "windSpeed:" + data.current.wind_speed
       var iconImg = document.createElement("img")
       iconImg.setAttribute('src',
-        `http://openweathermap.org/img/w/` + data.current.weather[0].icon + `.png`)
+        `https://openweathermap.org/img/w/` + data.current.weather[0].icon + `.png`)
       current.append(temp, humidity, uvi, windSpeed, iconImg)
       for (var i = 0; i < 5; i++) {
         var fiveDay = document.querySelector(".five-day")
@@ -59,7 +59,7 @@ function searchCity(lat, lon) {
 function getLocation() {
   var geoCity = document.getElementById("search").value;
   console.log(geoCity)
-  fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${geoCity}&limit=1&appid=48da628734e9fec404e0b749f53c4fc7`)
+  fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${geoCity}&limit=1&appid=48da628734e9fec404e0b749f53c4fc7`)
     .then(function (response) {
       return response.json();
     }
